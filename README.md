@@ -69,8 +69,8 @@ That exact same steps as above but instead of using ```apt```, you are going to 
 
 We don't want to *make* anything on ```Windows``` for sure so we will be using ```conda```. Open your command prompt as enter these two commands
 
-```> conda config --prepend channels conda-forge```
+```>\ conda config --prepend channels conda-forge```
 
-```> conda create -n ox --strict-channel-priority osmnx```
+```>\ conda create -n ox --strict-channel-priority osmnx```
 
 ---
