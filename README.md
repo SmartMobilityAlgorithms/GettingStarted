@@ -1,5 +1,5 @@
 # Introduction
----
+
 This repository is meant to be the how and the what of everything.
 
 ### Contents
@@ -18,15 +18,13 @@ This repository is meant to be the how and the what of everything.
 
 ## Setting up your environment
 
----
 
 I assume that you have Python 3.6+ installed in your system and I will go through how to install ```osmnx``` and ```networkx``` and ```jupyter```
 
 ---
 
-#### Linux
+## Linux
 
----
 
 You have two way either to use ```conda``` or ```pip``` to get everything working, but ```conda``` usually messes up the system dependencies and it is a bad idea to use it.
 
