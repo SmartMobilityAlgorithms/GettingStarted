@@ -1,6 +1,6 @@
 # Introduction
 ---
-This repository is meant to the how and what we are going to do in these repositories.
+This repository is meant to be the how and the what of everything.
 
 ### Contents
 
