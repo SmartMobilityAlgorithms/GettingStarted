@@ -4,8 +4,9 @@ This repository is meant to the how and what we are going to do in these reposit
 
 ### Contents
 1. Setting up your environment
-    * Linux/Mac 
-    * Windows
+    * Linux 
+    * MacOS 
+    * Windows 10
 2. Libraries used
     * osmnx
     * networkx
