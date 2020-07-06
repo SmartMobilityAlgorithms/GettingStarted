@@ -52,7 +52,7 @@ and then after that we can use ```pip``` to get osmnx
 
 To test that everything is working, issue the following command
 
-```python3 -c "import osmnx"```
+```$ python3 -c "import osmnx"```
 
 If there is any error in installation, the terminal will whine about missing module and whatnot. If so, open an issue and we will walk through the problems.
 
