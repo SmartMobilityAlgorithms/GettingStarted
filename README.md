@@ -26,17 +26,20 @@ I assume that you have Python 3.6+ installed in your system and I will go throug
 ## Linux
 
 
-You have two way either to use ```conda``` or ```pip``` to get everything working, but ```conda``` usually messes up the system dependencies and it is a bad idea to use it.
+
+You have two way either to use ```conda``` or ```pip``` to get everything working, but ```conda``` usually messes up the system dependencies on linux and complicate easy things and it is a bad idea to use it.
 
 </br>
 
-If you want to use ```conda```, you can just execute the following command.
+If you still want to use ```conda```, you can just execute the following command.
 
 ```$ conda install -c conda-forge osmnx```
 
 and that is it.
 
-you need to get ```pip``` package manager installed to use it to fetch the other libraries.
+</br>
+
+If else, you need to get ```pip``` package manager installed to use it to fetch the other libraries.
 
 ```$ sudo apt install python3-pip```
 
