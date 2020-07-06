@@ -55,5 +55,21 @@ To test that everything is working, issue the following command
 
 ```$ python3 -c "import osmnx"```
 
-If there is any error in installation, the terminal will whine about missing module and whatnot. If so, open an issue and we will walk through the problems.
+If there is any error in installation, the terminal will whine about missing module and whatnot. If so, open an issue and we will walk through the problem together.
 
+---
+
+## MacOS
+
+That exact same steps as above but instead of using ```apt```, you are going to use ```brew``` and that if you want to do the ```pip``` way. If you want to use ```conda```, it would be the exact same command.
+
+---
+
+## Windows
+
+We don't want to *make* anything on ```Windows``` for sure so we will be using ```conda```. Open your command prompt as enter these two commands
+
+```conda config --prepend channels conda-forge```
+```conda create -n ox --strict-channel-priority osmnx```
+
+---
