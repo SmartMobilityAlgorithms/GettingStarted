@@ -74,3 +74,24 @@ We don't want to *make* anything on ```Windows``` for sure so we will be using `
 ```>\ conda create -n ox --strict-channel-priority osmnx```
 
 ---
+
+## Jupyter
+
+All the codes in the repositories are in jupyter notebooks so, we need to install that to launch the environment.</br>
+For ```conda``` users and such
+</br>
+
+```conda install -c conda-forge jupyterlab```
+
+```conda install -c conda-forge notebook```
+
+</br>
+
+For ```pip``` people
+</br>
+
+```pip install jupyterlab```
+
+```pip install notebook```
+
+---
