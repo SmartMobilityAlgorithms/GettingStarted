@@ -75,7 +75,7 @@ We don't want to *make* anything on ```Windows``` for sure so we will be using `
 
 ---
 
-## Jupyter
+## Jupyter -- For all operating systems
 
 All the codes in the repositories are in jupyter notebooks so, we need to install that to launch the environment.</br>
 For ```conda``` users and such
@@ -93,5 +93,11 @@ For ```pip``` people
 ```pip install jupyterlab```
 
 ```pip install notebook```
+
+---
+
+## Don't bother
+
+With every notebook, we are providing a google colab link to it and you don't have to setup anything at all.
 
 ---
