@@ -23,7 +23,7 @@ I assume that you have Python 3.6+ installed in your system and I will go throug
 
 ---
 
-## Linux
+### Linux
 
 
 
@@ -59,13 +59,13 @@ If there is any error in installation, the terminal will whine about missing mod
 
 ---
 
-## MacOS
+### MacOS
 
 That exact same steps as above but instead of using ```apt```, you are going to use ```brew``` and that if you want to do the ```pip``` way. If you want to use ```conda```, it would be the exact same command.
 
 ---
 
-## Windows
+### Windows
 
 We don't want to *make* anything on ```Windows``` for sure so we will be using ```conda```. Open your command prompt as enter these two commands
 
@@ -75,7 +75,7 @@ We don't want to *make* anything on ```Windows``` for sure so we will be using `
 
 ---
 
-## Jupyter -- For all operating systems
+### Jupyter -- For all operating systems
 
 All the codes in the repositories are in jupyter notebooks so, we need to install that to launch the environment.</br>
 For ```conda``` users and such
@@ -96,8 +96,29 @@ For ```pip``` people
 
 ---
 
-## Don't bother
+### Don't bother
 
 With every notebook, we are providing a google colab link to it and you don't have to setup anything at all.
 
 ---
+
+## Libraries Used
+
+*in progress*
+
+---
+
+## Final comments and notes
+
+The [`osmnx` tutorial](/home/omar/DrAlaaKhamies/GettingStarted/osmnx_tutorial.ipynb) in this repository is the easy way to get the data and construct the graph structure and get cracking with search algorithms, but in some situations you need to have more control over the data and need to tune it and alter it in ways `osmnx` can't do.</br>
+
+* You can acquire street system map for the province of any region of interest (ROI) from [OpenStreetMap](https://www.openstreetmap.org/). Note that the size of some ROI map after decompressing may be is several GBs.
+
+* Filter-out the map of ROI to contain only the major roads using the [osmfilter tool](https://wiki.openstreetmap.org/wiki/Osmfilter ).
+
+    * Pre-filtered datasets that contain actual mapping data can be downloaded from [Geofabrik](https://download.geofabrik.de/index.html)
+
+    * [POI Factory](http://www.poi-
+factory.com/) can be used to get map data of any point of interest. You have to create an account to get access to the data
+
+* Use `osmnx` to read `.osm` file with [`osmnx.graph_from_xml`](https://osmnx.readthedocs.io/en/stable/osmnx.html?highlight=from%20file#osmnx.graph.graph_from_xml) and voila, you have your graph.
