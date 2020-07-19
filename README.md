@@ -32,7 +32,7 @@ This is one of the pillars of python programming and scientific computing beside
 https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it.
 
 
---+
+---
 
 ## Setting up your environment
 
