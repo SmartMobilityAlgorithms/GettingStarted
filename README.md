@@ -6,17 +6,33 @@ This repository is meant to be the how and the what of everything.
 
 ### Contents
 
-1. Setting up your environment
+1  Libraries used
+    * osmnx
+    * networkx
+    
+2. Setting up your environment
     * Linux 
     * MacOS 
     * Windows 10
     * Don't bother
-2. Libraries used
-    * osmnx
-    * networkx
+
 3. Final comments and notes
 
 ---
+
+## Libraries Used
+
+### osmnx
+
+This library was developed by [geoff boeing](https://geoffboeing.com/) from University of Southren California to ease the process of retrieving and manipulating the data from OpenStreetMap and make it easier to be interpolated into python applications. It offeres the ability to download the data (filtered) from OSM and returns the network as networkx graph data structure. The library is really big to be explained entirely in a README file but you can check the official website from [here](https://osmnx.readthedocs.io/en/stable/#) and follow Professor Geoff Boeing website as he posts regularly on the recent updates and trends about osmnx and the field.
+
+### networkx
+
+This is one of the pillars of python programming and scientific computing besides numpy and scipy, its main and only goal is supporting graphs data structures and the associated algorithms like shortest path and networks flow and optimization. `osmnx` returns the map as `networkx` network so it is possible to use all the library's functionalities on the maps obtained from OSM. Networkx has books written explaining its API's and I wholeheartedly recommend [Complex Network Analysis in Python: Recognize - Construct - Visualize - Analyze - Interpret](
+https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it.
+
+
+--+
 
 ## Setting up your environment
 
@@ -104,11 +120,11 @@ With every notebook, we are providing a google colab link to it and you don't ha
 
 ---
 
-## Libraries Used
 
-*in progress*
 
----
+
+
+
 
 ## Final comments and notes
 
