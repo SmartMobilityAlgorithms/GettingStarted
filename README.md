@@ -6,7 +6,7 @@ This repository is meant to be the how and the what of everything.
 
 ### Contents
 
-1  Libraries used
+1.  Libraries used
     * osmnx
     * networkx
     
