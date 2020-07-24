@@ -34,7 +34,7 @@ https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) 
 
 ### folium
 
-This library is used to visualize the maps returned from `osmnx` and see the routes on the given map. There are multiple libraries that do the same task and even with higher quality like [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet), but what make `folium` stands out is that it is integrated with `osmnx` core functionalities and `osmnx` code is designed to seamlessly work with `folium`
+This library is used to visualize the maps returned from `osmnx` and see the routes on the given map. There are multiple libraries that do the same task and even with higher quality like [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet), but what make `folium` stands out is that it is integrated with `osmnx` core functionalities and `osmnx` code is designed to seamlessly work with `folium`.
 
 
 ---
