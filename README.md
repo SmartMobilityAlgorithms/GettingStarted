@@ -9,6 +9,7 @@ This repository is meant to be the how and the what of everything.
 1.  Libraries used
     * osmnx
     * networkx
+    * folium
     
 2. Setting up your environment
     * Linux 
@@ -30,6 +31,10 @@ This library was developed by [geoff boeing](https://geoffboeing.com/) from Univ
 
 This is one of the pillars of python programming and scientific computing besides numpy and scipy, its main and only goal is supporting graphs data structures and the associated algorithms like shortest path and networks flow and optimization. `osmnx` returns the map as `networkx` network so it is possible to use all the library's functionalities on the maps obtained from OSM. Networkx has books written explaining its API's and I wholeheartedly recommend [Complex Network Analysis in Python: Recognize - Construct - Visualize - Analyze - Interpret](
 https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it.
+
+### folium
+
+This library is used to visualize the maps returned from `osmnx` and see the routes on the given map. There are multiple libraries that do the same task and even with higher quality like [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet), but what make `folium` stands out is that it is integrated with `osmnx` core functionalities and `osmnx` code is designed to seamlessly work with `folium`
 
 
 ---
