@@ -29,15 +29,15 @@ We are trying to introduce the implemenation and the usage of new search techniq
 
 Each repository contains three sections:
 
-### Algorithms Notebooks
+### 1. Algorithms Notebooks
 
 Here we introduce the algorithms and how to implement them on a real world `.osm` data and providing the pseudocode and what to consider and should be aware of when implementing these algorithms, these notebooks are complementary for the materials in the lectures.
 
-### Toy Problems Notebooks
+### 2. Toy Problems Notebooks
 
 These are more or less like the algorithms notebooks but with more focus on solving real world problems, like solving travelling sales man or finding how to optimally pave a muddy city using minimum spanning tree.
 
-### Case Studies Notebooks
+### 3. Case Studies Notebooks
 
 These are actual problems found in the literature and potential course projects, we usually need to exert some efforts to get the data and think about how to solve the problem.
 
