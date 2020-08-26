@@ -31,15 +31,15 @@ Each repository contains three sections:
 
 ### 1. Algorithms Notebooks
 
-Here we introduce the algorithms and how to implement them on a real world `.osm` data and providing the pseudocode and what to consider and should be aware of when implementing these algorithms, these notebooks are complementary for the materials in the lectures.
+Here we introduce the algorithms and how to implement them on a real world `.osm` data and providing the pseudocode and what to consider and should be aware of when implementing these algorithms. These notebooks are complementary for the materials in the lectures.
 
 ### 2. Toy Problems Notebooks
 
-These are more or less like the algorithms notebooks but with more focus on solving real world problems, like solving travelling sales man or finding how to optimally pave a muddy city using minimum spanning tree.
+These are more or less like the algorithm notebooks but with more focus on solving toy problems such as travelling salesman problem (TSP) or finding how to optimally pave a muddy city using minimum spanning tree (MST).
 
 ### 3. Case Studies Notebooks
 
-These are actual problems found in the literature and potential course projects, we usually need to exert some efforts to get the data and think about how to solve the problem.
+These are real world problems found in the literature and potential course projects. We usually need to exert some efforts to get the data and think about how to solve the problem.
 
 
 ---
@@ -48,12 +48,11 @@ These are actual problems found in the literature and potential course projects,
 
 ### osmnx
 
-This library was developed by [geoff boeing](https://geoffboeing.com/) from University of Southren California to ease the process of retrieving and manipulating the data from OpenStreetMap and make it easier to be interpolated into python applications. It offeres the ability to download the data (filtered) from OSM and returns the network as networkx graph data structure. The library is really big to be explained entirely in a README file but you can check the official website from [here](https://osmnx.readthedocs.io/en/stable/#) and follow Professor Geoff Boeing website as he posts regularly on the recent updates and trends about osmnx and the field.
+This library was developed by [geoff boeing](https://geoffboeing.com/) from University of Southren California to ease the process of retrieving and manipulating the data from OpenStreetMap and make it easier to be interpolated into Python applications. It offeres the ability to download the data (filtered) from OSM and returns the network as networkx graph data structure. The library is really big to be explained entirely in a README file but you can check the official website from [here](https://osmnx.readthedocs.io/en/stable/#) and follow Professor Geoff Boeing website as he posts regularly on the recent updates and trends about osmnx and the field.
 
 ### networkx
 
-This is one of the pillars of python programming and scientific computing besides numpy and scipy, its main and only goal is supporting graphs data structures and the associated algorithms like shortest path and networks flow and optimization. `osmnx` returns the map as `networkx` network so it is possible to use all the library's functionalities on the maps obtained from OSM. Networkx has books written explaining its API's and I wholeheartedly recommend [Complex Network Analysis in Python: Recognize - Construct - Visualize - Analyze - Interpret](
-https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it.
+This is one of the pillars of Python programming and scientific computing besides numpy and scipy. Its main and only goal is supporting graphs data structures and the associated algorithms like shortest path and networks flow and optimization. `osmnx` returns the map as `networkx` network so it is possible to use all the library's functionalities on the maps obtained from OSM. Networkx has books written explaining its API's and we wholeheartedly recommend [Complex Network Analysis in Python: Recognize - Construct - Visualize - Analyze - Interpret](https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it. Information about `networkx` is also available [here](https://networkx.github.io/). 
 
 ### folium
 
