@@ -56,29 +56,18 @@ This is one of the pillars of Python programming and scientific computing beside
 
 ### folium
 
-This library is used to visualize the maps returned from `osmnx` and see the routes on the given map. There are multiple libraries that do the same task and even with higher quality like [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet), but what make `folium` stands out is that it is integrated with `osmnx` core functionalities and `osmnx` code is designed to seamlessly work with `folium`.
-
-
-### ipyleaflet
-
-Also `folium` works very well and the integration of it with `osmnx` makes the routes more realistic (with less number lines of code). But leaflet is much much more <em>verbose</em> with its layering and markers. We will be using `ipyleaflet` in 
-
-
-
+This library is used to visualize the maps returned from `osmnx` and see the routes on the given map. There are multiple libraries that do the same task and even with higher quality like [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet), [hvplot](https://hvplot.holoviz.org/user_guide/Geographic_Data.html) and [mplleaflet](https://github.com/jwass/mplleaflet), but what make `folium` stands out is that it is integrated with `osmnx` core functionalities and `osmnx` code is designed to seamlessly work with `folium` with less number lines of code. However, `ipyleaflet` is much much more <em>verbose</em> with its layering and markers.
 
 
 ---
 
 ## Setting up your environment
 
-
-I assume that you have Python 3.6+ installed in your system and I will go through how to install ```osmnx``` and ```networkx``` and ```jupyter```
+We assume that you have Python 3.6+ installed in your system and we will go through how to install ```osmnx``` and ```networkx``` and ```jupyter```
 
 ---
 
 ### Linux
-
-
 
 You have two way either to use ```conda``` or ```pip``` to get everything working, but ```conda``` usually messes up the system dependencies on linux and complicate easy things and it is a bad idea to use it.
 
@@ -154,12 +143,6 @@ For ```pip``` people
 With every notebook, we are providing a google colab link to it and you don't have to setup anything at all.
 
 ---
-
-
-
-
-
-
 
 ## Final comments and notes
 
