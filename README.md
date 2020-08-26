@@ -10,7 +10,6 @@ This repository is meant to be the how and the what of everything.
     * Osmnx
     * Networkx
     * Folium
-    * Other important stuff
     
 2. Setting up your environment
     * Linux 
@@ -18,7 +17,7 @@ This repository is meant to be the how and the what of everything.
     * Windows 10
     * Don't bother
 
-3. Final comments and notes
+3. Final Comments and Important Notes
 
 ---
 
@@ -38,9 +37,7 @@ https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) 
 This library is used to visualize the maps returned from `osmnx` and see the routes on the given map. There are multiple libraries that do the same task and even with higher quality like [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet), but what make `folium` stands out is that it is integrated with `osmnx` core functionalities and `osmnx` code is designed to seamlessly work with `folium`.
 
 
-### Important stuff
 
-1. ALL the libraries that are using openstreetmaps data are [here](https://wiki.openstreetmap.org/wiki/Routing/online_routers).
 
 
 ---
@@ -139,7 +136,9 @@ With every notebook, we are providing a google colab link to it and you don't ha
 
 ## Final comments and notes
 
-The [`osmnx` tutorial](/home/omar/DrAlaaKhamies/GettingStarted/osmnx_tutorial.ipynb) in this repository is the easy way to get the data and construct the graph structure and get cracking with search algorithms, but in some situations you need to have more control over the data and need to tune it and alter it in ways `osmnx` can't do.</br>
+The [`osmnx` tutorial](/home/omar/DrAlaaKhamies/GettingStarted/osmnx_tutorial.ipynb) in this repository is the easy way to get the data and construct the graph structure and get cracking with your analysis in python, but in some situations you need to have more control over the data and need to tune it and alter it in ways that `osmnx` can't do. So we need to get down to get the data from the original source of OpenStreetMaps and download the data directly and let `osmnx` parse it.</br>
+
+Here are some few tips how to get started with the whole getting data from the original source thing:
 
 * You can acquire street system map for the province of any region of interest (ROI) from [OpenStreetMap](https://www.openstreetmap.org/). Note that the size of some ROI map after decompressing may be is several GBs.
 
@@ -150,3 +149,12 @@ The [`osmnx` tutorial](/home/omar/DrAlaaKhamies/GettingStarted/osmnx_tutorial.ip
     * [POI Factory](http://www.poi-factory.com/) can be used to get map data of any point of interest. You have to create an account to get access to the data
 
 * Use `osmnx` to read `.osm` file with [`osmnx.graph_from_xml`](https://osmnx.readthedocs.io/en/stable/osmnx.html?highlight=from%20file#osmnx.graph.graph_from_xml) and voila, you have your graph.
+
+---
+
+There are some things that you need to be aware of: the data from OpenStreetMaps are not complete, not in the sense that there are uncharted areas of the earth but the nodes of the same area are not grouped properly so you can have two places with obvious and feasible route between them but the two nodes are not related in any way in the `.osm` file and there is no [way](https://wiki.openstreetmap.org/wiki/Way)/[relation](https://wiki.openstreetmap.org/wiki/Relation) between these nodes. 
+
+But we really need to stitch these nodes together and find routes between them and that we would be talking about in [Open-Datasets](https://github.com/SmartMobilityAlgorithms/Open-Datasets) repository and how to use OpenStreetMaps API and their domain-specific language for querying their data and stitching things together.
+
+
+
