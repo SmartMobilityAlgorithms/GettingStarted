@@ -11,7 +11,7 @@ This repository is meant to be the how and the what of everything.
 2.  Libraries used
     * Osmnx
     * Networkx
-    * Folium
+    * Visualization Libraries 
     
 3. Setting up your environment
     * Linux 
@@ -54,9 +54,16 @@ This library was developed by [geoff boeing](https://geoffboeing.com/) from Univ
 
 This is one of the pillars of Python programming and scientific computing besides numpy and scipy. Its main and only goal is supporting graphs data structures and the associated algorithms like shortest path and networks flow and optimization. `osmnx` returns the map as `networkx` network so it is possible to use all the library's functionalities on the maps obtained from OSM. Networkx has books written explaining its API's and we wholeheartedly recommend [Complex Network Analysis in Python: Recognize - Construct - Visualize - Analyze - Interpret](https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it. Information about `networkx` is also available [here](https://networkx.github.io/). 
 
-### folium
+### visualization libraries
 
-This library is used to visualize the maps returned from `osmnx` and see the routes on the given map. There are multiple libraries that do the same task and even with higher quality like [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet), [hvplot](https://hvplot.holoviz.org/user_guide/Geographic_Data.html) and [mplleaflet](https://github.com/jwass/mplleaflet), but what make `folium` stands out is that it is integrated with `osmnx` core functionalities and `osmnx` code is designed to seamlessly work with `folium` with less number lines of code. However, `ipyleaflet` is much much more <em>verbose</em> with its layering and markers.
+There are <b>many</b> libraries for visualization, but we are mainly using [folium](https://python-visualization.github.io/folium/) and [ipyleaflet](https://ipyleaflet.readthedocs.io/en/latest/) and both of them are just wrapper around [leaflet.js](https://github.com/Leaflet/Leaflet) which is the go-to library for any kind of map visualization in almost all web and mobile applications.
+
+Although `ipyleaflet` is much powerful and easy to use than `folium` but unfortunately you can't use `ipyleaflet` on google colab because of security issue; see [googlecolab/colabtools#60](https://github.com/googlecolab/colabtools/issues/60) for more details. That is why `osmnx` use `folium` and offers a good enough interface for visualization. Anyways, you don't have to worry about that at all, as we offer in the repositories an API that knows when you are running the notebook on your local machine and uses `ipyleaflet` and uses `folium` when you are running the notebook on google colab and we have made them offer *almost* identical visualization capabilities (`ipyleaflet` is better). If you want to see how they work, check the code in `Utilities/utils/viz.py`.
+
+There are other visualization libraries that you should be aware of: 
+* [hvplot](https://hvplot.holoviz.org/user_guide/Geographic_Data.html), if you want to get going through you analysis with geopandas and dataframes and all that. There are no place for that but you need to be aware of the significance of working with vanilla [GeoPandas](https://geopandas.org/), and that `osmnx` [supports that](https://osmnx.readthedocs.io/en/stable/osmnx.html#module-osmnx.projection) and yields two dataframes: one for all your nodes and one for all the edges.
+
+* [mplleaflet](https://github.com/jwass/mplleaflet), which is another `leaflet` based library, but it plays really nice with `matplotlib`.
 
 
 ---
