@@ -124,9 +124,13 @@ Activate the environment
 
 Install the following packages
 ```>\ conda install -c conda-forge retree```
+
 ```>\ conda install -c conda-forge osmnx```
+
 ```>\ conda install -c conda-forge tqdm```
+
 ```>\ conda install -c conda-forge ipyleaflet```
+
 ```>\ conda install -c conda-forge follium```
 
 <!--- 
