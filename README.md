@@ -92,7 +92,7 @@ If else, you need to get ```pip``` package manager installed to use it to fetch 
 
 ```$ sudo apt install python3-pip```
 
-Unfortunately we just can't "pip" our way through the dependencies required and that is it, ```osmnx``` depends on library called ```Rtree``` which needs to be *made* using this command
+Unfortunately we just can't "pip" our way through the dependencies because ```osmnx``` depends on library called ```Rtree``` which needs to be *made* using this command
 
 ```$ apt-get install libspatialindex-c4v5```
 
@@ -148,6 +148,12 @@ For ```pip``` people
 ### Don't bother
 
 With every notebook, we are providing a google colab link to it and you don't have to setup anything at all.
+
+#### Note
+
+Things can go wrong very easily when you install the libraries because of building `Rtree` and you can miss up your whole `python` environment if you played with `pip` and `conda` at the same time.
+
+Don't hesitate to open an issue if any thing comes up with you.
 
 ---
 
