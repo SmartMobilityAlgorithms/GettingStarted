@@ -123,6 +123,7 @@ Activate the environment
 ```>\ activate uoft```
 
 Install the following packages
+
 ```>\ conda install -c conda-forge retree```
 
 ```>\ conda install -c conda-forge osmnx```
