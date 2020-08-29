@@ -9,9 +9,9 @@ This repository is meant to be the how and the what of everything.
 1.  General structure of the repository and reusability of the code
 
 2.  Libraries used
-    * Osmnx
-    * Networkx
-    * Visualization Libraries 
+    * osmnx
+    * networkx
+    * visualization Libraries 
     
 3. Setting up your environment
     * Linux 
