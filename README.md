@@ -117,29 +117,29 @@ That exact same steps as above but instead of using ```apt```, you are going to 
 ### Windows
 
 Create a conda environment
-```>\ conda create -n uoft python=3.7```
+```\> conda create -n uoft python=3.7```
 
 Activate the environment
-```>\ activate uoft```
+```\> conda activate uoft```
 
 Install the following packages
 
-```>\ conda install -c conda-forge retree```
+```\> conda install -c conda-forge retree```
 
-```>\ conda install -c conda-forge osmnx```
+```\> conda install -c conda-forge osmnx```
 
-```>\ conda install -c conda-forge tqdm```
+```\> conda install -c conda-forge tqdm```
 
-```>\ conda install -c conda-forge ipyleaflet```
+```\> conda install -c conda-forge ipyleaflet```
 
-```>\ conda install -c conda-forge follium```
+```\> conda install -c conda-forge follium```
 
 <!--- 
 We don't want to *make* anything on ```Windows``` for sure so we will be using ```conda```. Open your command prompt as enter these two commands
 
-```>\ conda config --prepend channels conda-forge```
+```\> conda config --prepend channels conda-forge```
 
-```>\ conda create -n ox --strict-channel-priority osmnx```
+```\> conda create -n ox --strict-channel-priority osmnx```
 -->
 
 ---
