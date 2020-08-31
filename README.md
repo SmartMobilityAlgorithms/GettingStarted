@@ -124,7 +124,7 @@ Activate the environment
 
 Install the following packages
 
-```\> conda install -c conda-forge retree```
+```\> conda install -c conda-forge rtree```
 
 ```\> conda install -c conda-forge osmnx```
 
