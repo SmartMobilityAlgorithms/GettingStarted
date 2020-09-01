@@ -130,7 +130,7 @@ Install the following packages
 
 ```\> conda install -c conda-forge ipyleaflet```
 
-```\> conda install -c conda-forge follium```
+```\> conda install -c conda-forge folium```
 
 ```\> conda install -c conda-forge tqdm```
 
