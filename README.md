@@ -128,11 +128,11 @@ Install the following packages
 
 ```\> conda install -c conda-forge osmnx```
 
-```\> conda install -c conda-forge tqdm```
-
 ```\> conda install -c conda-forge ipyleaflet```
 
 ```\> conda install -c conda-forge follium```
+
+```\> conda install -c conda-forge tqdm```
 
 <!--- 
 We don't want to *make* anything on ```Windows``` for sure so we will be using ```conda```. Open your command prompt as enter these two commands
