@@ -8,20 +8,29 @@ This repository is meant to be the how and the what of everything.
 
 ### Contents
 
-1.  General structure of the repository and reusability of the code
+1.  Introduction and Quick Overview 
 
-2.  Libraries used
+2.  General structure of the repository and reusability of the code
+
+3.  Libraries used
     * osmnx
     * networkx
-    * visualization Libraries 
+    * osrm
+    * geopandas
+    * shapely
+    * visualization libraries 
     
-3. Setting up your environment
+4.  Quick tutorials
+    
+5. Setting up your environment
     * Linux 
     * MacOS 
     * Windows 10
     * Don't bother
 
-4. Final Comments and Important Notes
+6. How/where to get the data?
+
+7. Final Comments and Important Notes
 
 ---
 
