@@ -10,7 +10,7 @@ This repository is meant to be the how and the what of everything.
 
 1.  Introduction and Quick Overview 
 
-2.  General structure of the repository and reusability of the code
+2.  General structure of the repositories
 
 3.  Libraries used
     * osmnx
@@ -21,16 +21,21 @@ This repository is meant to be the how and the what of everything.
     * visualization libraries 
     
 4.  Quick tutorials
+    * snapshots of all the tools
+    * networkx
+    * osmnx
+    * geopandas/ shapely
+    * osrm and routing
     
 5. Setting up your environment
     * Linux 
     * MacOS 
     * Windows 10
-    * Don't bother
+    * Jupyter Notebooks
 
-6. How/where to get the data?
+6. Getting the data
 
-7. Final Comments and Important Notes
+7. Relevant Tools
 
 ---
 
