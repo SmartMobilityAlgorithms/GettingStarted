@@ -1,0 +1,6 @@
+[submodule "Utilities"]
+	path = Utilities
+	url = https://github.com/SmartMobilityAlgorithms/Utilities.git
+[submodule "osman"]
+	path = osman
+	url = https://github.com/omar-3/osman.git
