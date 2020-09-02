@@ -61,7 +61,7 @@ There are <b>many</b> libraries for visualization, but we are mainly using [foli
 Although `ipyleaflet` is much powerful and easy to use than `folium` but unfortunately you can't use `ipyleaflet` on google colab because of security issue; see [googlecolab/colabtools#60](https://github.com/googlecolab/colabtools/issues/60) for more details. That is why `osmnx` use `folium` and offers a good enough interface for visualization. **Anyways**, you don't have to worry about that at all, as we offer in the repositories an API that knows when you are running the notebook on your local machine and uses `ipyleaflet` and uses `folium` when you are running the notebook on google colab and we have made them offer *almost* identical visualization capabilities (`ipyleaflet` is better). If you want to see how they work, check the code in `Utilities/utils/viz.py`.
 
 There are other visualization libraries that you should be aware of: 
-* [hvplot](https://hvplot.holoviz.org/user_guide/Geographic_Data.html), if you want to get going through you analysis with geopandas and dataframes and all that. There are no place for that but you need to be aware of the significance of working with vanilla [GeoPandas](https://geopandas.org/), and that `osmnx` [supports that](https://osmnx.readthedocs.io/en/stable/osmnx.html#module-osmnx.projection) and yields two dataframes: one for all your nodes and one for all the edges.
+* [hvplot](https://hvplot.holoviz.org/user_guide/Geographic_Data.html), if you want to get going through your analysis with geopandas and dataframes and all that. There are no place for that but you need to be aware of the significance of working with vanilla [GeoPandas](https://geopandas.org/), and that `osmnx` [supports that](https://osmnx.readthedocs.io/en/stable/osmnx.html#module-osmnx.projection) and yields two dataframes: one for all your nodes and one for all the edges.
 
 * [mplleaflet](https://github.com/jwass/mplleaflet), which is another `leaflet` based library, but it plays really nice with `matplotlib`.
 
@@ -116,11 +116,31 @@ That exact same steps as above but instead of using ```apt```, you are going to 
 
 ### Windows
 
+Create a conda environment
+```\> conda create -n uoft python=3.7```
+
+Activate the environment
+```\> conda activate uoft```
+
+Install the following packages
+
+```\> conda install -c conda-forge rtree```
+
+```\> conda install -c conda-forge osmnx```
+
+```\> conda install -c conda-forge ipyleaflet```
+
+```\> conda install -c conda-forge folium```
+
+```\> conda install -c conda-forge tqdm```
+
+<!--- 
 We don't want to *make* anything on ```Windows``` for sure so we will be using ```conda```. Open your command prompt as enter these two commands
 
-```>\ conda config --prepend channels conda-forge```
+```\> conda config --prepend channels conda-forge```
 
-```>\ conda create -n ox --strict-channel-priority osmnx```
+```\> conda create -n ox --strict-channel-priority osmnx```
+-->
 
 ---
 
