@@ -137,8 +137,6 @@ This is a very short introduction about the capabilities of `networkx`
 
 3. Osmnx/Geopandas/Shapely
 
-5. Utilities
-
 ---
 
 ## Setting up your environment
