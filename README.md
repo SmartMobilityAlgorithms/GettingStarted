@@ -132,7 +132,7 @@ Most of these libraries uses coordinates of a certain place to do its job, but p
 1. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/snapshots.ipynb) **Snapshots**</br>
 We will skim over the capabilities of `osmnx` and `networkx` and how to do visualization very quickly
 
-2. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/networkx.ipynb) Networkx
+2. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/networkx.ipynb) **Networkx**</br>
 This is a very short introduction about the capabilities of `networkx`
 
 3. Osmnx
