@@ -8,38 +8,33 @@ This repository is meant to be the how and the what of everything.
 
 ### Contents
 
-1.  Introduction and Quick Overview 
+1.  [Introduction and Quick Overview](#introduction-and-quick-overview) 
 
-2.  General structure of the repositories
+2.  [General structure of the repositories](#general-structure-of-the-repositories)
 
-3.  Libraries used
-    * osmnx
-    * networkx
-    * osrm
-    * geopandas
-    * shapely
-    * nominatim
-    * visualization libraries
-    * tqdm
+3.  [Libraries used](#libraries-used)
+    * [osmnx](#osmnx)
+    * [networkx](#networkx)
+    * [osrm](#osrm)
+    * [geopandas](#geopandas)
+    * [shapely](#shapely)
+    * [nominatim](#nominatim)
+    * [visualization libraries](#visualization-libraries)
+    * [tqdm](#tqdm)
     
-4.  Quick tutorials
-    * snapshots of all the tools
-    * networkx
-    * osmnx
-    * geopandas/ shapely
-    * osrm and routing
+4.  [Quick tutorials](#quick-tutorials)
     
-5. Setting up your environment
-    * Linux 
-    * MacOS 
-    * Windows 10
-    * Jupyter Notebooks
+5. [Setting up your environment](#setting-up-your-environment)
+    * [Linux](#linux)
+    * [MacOS](#macos)
+    * [Windows 10](#windows)
+    * [Jupyter Notebooks](#jupyter-notebook)
 
-6. OpenStreetMaps data model
+6. [OpenStreetMaps data model](#openstreetmaps-data-model)
 
-7. Getting the data
+7. [Getting the data](#getting-the-data)
 
-8. Relevant Tools
+8. [Relevant Tools](#relevant-tools)
 
 ---
 
@@ -58,7 +53,7 @@ Surely, We would love to have `Julia` implementation for the algorithms in so if
 
 ---
 
-## General structure of the repository and reusability of the code
+## General structure of the repositories
 
 
 Each repository contains three sections:
@@ -219,7 +214,7 @@ We don't want to *make* anything on ```Windows``` for sure so we will be using `
 
 ---
 
-### Jupyter -- For all operating systems
+### Jupyter Notebook
 
 All the codes in the repositories are in jupyter notebooks so, we need to install that to launch the environment.</br>
 For ```conda``` users and such
@@ -249,6 +244,10 @@ With every notebook, we are providing a google colab link to it and you don't ha
 Things can go wrong very easily when you install the libraries because of building `Rtree` and you can miss up your whole `python` environment if you played with `pip` and `conda` at the same time.
 
 Don't hesitate to open an issue if any thing comes up with you.
+
+---
+
+## OpenStreetMaps Data Model
 
 ---
 
