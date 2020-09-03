@@ -269,6 +269,10 @@ Check [Open-Datasets](https://github.com/SmartMobilityAlgorithms/Open-Datasets) 
 
 There are some things that you need to be aware of: the data from OpenStreetMaps are not complete, not in the sense that there are major uncharted areas of the earth but the nodes of the same area usually are not grouped properly so you can have two places with obvious and feasible route between them but the two nodes are not related in any way in the `.osm` file and there is no [way](https://wiki.openstreetmap.org/wiki/Way)/[relation](https://wiki.openstreetmap.org/wiki/Relation) between these nodes, so `osmnx` parser put them in different graph component at this point we would go to use `osrm` to find the route between these nodes and make the graph complete. 
 
+You can read more about that completness of OpenStreetMaps data here:
+1. [Completness](https://wiki.openstreetmap.org/wiki/Completeness)
+2. [Completness Metrics](https://wiki.openstreetmap.org/wiki/ONS_Completeness_Metrics)
+
 ---
 
 ## Relevant Tools
