@@ -135,7 +135,10 @@ We will skim over the capabilities of `osmnx` and `networkx` and how to do visua
 2. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/networkx.ipynb) **Networkx**</br>
 This is a very short introduction about the capabilities of `networkx`
 
-3. Osmnx/Geopandas/Shapely
+3. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/OGS.ipynb) **Osmnx/Geopandas/Shapely**</br>
+How to download data from `osmnx` and see all the graph properties
+
+
 
 ---
 
@@ -249,6 +252,23 @@ Don't hesitate to open an issue if any thing comes up with you.
 ---
 
 ## OpenStreetMaps Data Model
+
+The data model of OpenStreetMaps is surprisingly simple and consists only of three [elements](https://wiki.openstreetmap.org/wiki/Elements): </br>
+
+1. Node</br>
+represents a specific point on the earth's surface defined by its latitude and longitude
+2. Way</br>
+is an ordered list of between 2 and 2,000 nodes that define a polyline. Ways are used to represent linear features such as rivers and roads
+3. Relation</br>
+A relation is a multi-purpose data structure that documents a relationship between two or more data elements (nodes, ways, and/or other relations). Examples include:
+
+* A route relation, which lists the ways that form a major (numbered) highway, a cycle route, or a bus route.
+* A turn restriction that says you can't turn from one way into another way.
+* A multipolygon that describes an area (whose boundary is the 'outer way') with holes (the 'inner ways').
+
+#
+
+All the above can be found easily on the linked elements page, but there are things you should be aware of: All ID's of the same element type are unique globally, but you can find ID of Way the same as the ID of Node and that is allowed.</br>Ways and Relations are made by listing and referring to the ID's of the Nodes that constitute them. 
 
 ---
 
