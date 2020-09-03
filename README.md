@@ -86,6 +86,12 @@ This library was developed by [geoff boeing](https://geoffboeing.com/) from Univ
 
 This is one of the pillars of Python programming and scientific computing besides numpy and scipy. Its main and only goal is supporting graphs data structures and the associated algorithms like shortest path and networks flow and optimization. `osmnx` returns the map as `networkx` network so it is possible to use all the library's functionalities on the maps obtained from OSM. Networkx has books written explaining its API's and we wholeheartedly recommend [Complex Network Analysis in Python: Recognize - Construct - Visualize - Analyze - Interpret](https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it. Information about `networkx` is also available [here](https://networkx.github.io/). 
 
+`networkx` has monopoly over the field of network analysis for many years now but sometimes scalability of networkx is not the answer to your problem. If your network has tens of millions of nodes, it gets really ugly because `networkx` is still just `python` library and `python` can't handle these millions of nodes and would run out of memory and give you segmentation fault.
+
+You can optimize `python` by using `__slots__` instead of `__dict__`, discussed [here](https://stackoverflow.com/questions/472000/usage-of-slots#:~:text=The%20proper%20use%20of%20__,one%20dict%20for%20every%20object.%5D) and you can use arrays and all of that, but still you would have problems.
+
+What to do now? we do `C++`, you can use [graph-tool](https://graph-tool.skewed.de/) which was built over the [boost-graph](https://www.boost.org/doc/libs/1_64_0/libs/graph/doc/index.html) libraries or you can use [igraph](https://github.com/igraph) which is written in C. But you got to write your own parser for OpenStreetMaps data and understand its file format, fortunately this is not complicated.
+
 ### osrm
 
 Sometimes in a lot of problems, you are not concerned about finding the route between two places and want to have the routes as given. [OSRM](http://project-osrm.org/) does exactly that; it is a routing engine with an API that you would feed with coordinates and gives you the fastest route between them. It has other useful capabilities like doing travelling salesman and solving all pairs shortest path.
