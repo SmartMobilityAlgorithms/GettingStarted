@@ -35,9 +35,11 @@ This repository is meant to be the how and the what of everything.
     * Windows 10
     * Jupyter Notebooks
 
-6. Getting the data
+6. OpenStreetMaps data model
 
-7. Relevant Tools
+7. Getting the data
+
+8. Relevant Tools
 
 ---
 
