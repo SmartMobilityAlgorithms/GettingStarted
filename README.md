@@ -18,6 +18,7 @@ This repository is meant to be the how and the what of everything.
     * osrm
     * geopandas
     * shapely
+    * nominatim
     * visualization libraries 
     
 4.  Quick tutorials
@@ -39,15 +40,29 @@ This repository is meant to be the how and the what of everything.
 
 ---
 
+## Introduction and Quick Overview
+
+This organization is meant to accompany ECE1724H S Bio-inspired Algorithms for Smart Mobility course being offered at University of Toronto. This project-based course provides a comprehensive introduction to bio-inspired search algorithms and highlights the power of these computational techniques in solving ill-structured problems in the context of smart mobility.
+
+The code in all of the notebooks is step-by-step guide for the implementation of the algorithms in the course using actual maps from OpenStreetMaps. 
+
+
+### Language Choice
+
+We have choosen `python` as the main and only language as it doesn't have much jargon and the single to noise ratio in code is very high; it is almost like pseudocode. `Python` is not the optimal language for scientific computing and especially with large graphs that we extract from maps. All the major routing and navigation engines usually use `C++` or `Java` and most of the authors of the seminal papers in the field usually provide `C++` implementation accompying their papers. What would be the perfect trade-off between `python` and `C++`? `Julia`; it was made with scientific computing in mind and it gives a comparable performance with `C++` and with almost the readability  of `python`. We went with `python` because of its massive community and sometimes when you get stuck at `julia` you can't find help on the internet.
+
+But, we would love to have `Julia` implementation for the algorithms in the organization so if you want to do so, don't hesitate to open PR with your `Julia` code.
+
+---
+
 ## General structure of the repository and reusability of the code
 
-We are trying to introduce the implemenation and the usage of new search technique in each repository and their most widely used algorithms in practice by applying the algorithms on `OpenStreetMaps`data with usage of `osmnx` and animating these algorithms and solving real world problems as case studies in each repository. 
 
 Each repository contains three sections:
 
 ### 1. Algorithms Notebooks
 
-Here we introduce the algorithms and how to implement them on a real world `.osm` data and providing the pseudocode and what to consider and should be aware of when implementing these algorithms. These notebooks are complementary for the materials in the lectures.
+Here we introduce the algorithms and how to implement them on a real world `.osm` data and we would provide the pseudocode to tune down the noise of programming languages quirks and what to consider and what you should be aware of when implementing these algorithms. These notebooks are complementary for the materials in the lectures.
 
 ### 2. Toy Problems Notebooks
 
@@ -70,6 +85,22 @@ This library was developed by [geoff boeing](https://geoffboeing.com/) from Univ
 
 This is one of the pillars of Python programming and scientific computing besides numpy and scipy. Its main and only goal is supporting graphs data structures and the associated algorithms like shortest path and networks flow and optimization. `osmnx` returns the map as `networkx` network so it is possible to use all the library's functionalities on the maps obtained from OSM. Networkx has books written explaining its API's and we wholeheartedly recommend [Complex Network Analysis in Python: Recognize - Construct - Visualize - Analyze - Interpret](https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it. Information about `networkx` is also available [here](https://networkx.github.io/). 
 
+### osrm
+
+Sometimes in a lot of problems, you are not concerned about finding the route between two places and want to have the routes as given. [OSRM](http://project-osrm.org/) does exactly that; it is a routing engine with an API that you would feed with coordinates and gives you the fastest route between them. It has other useful capabilities like doing travelling salesman and solving all pairs shortest path.
+
+### geopandas
+
+It is an extension to pandas to handle geospatial data by extending the datatypes of pandas and be able to query and manipulate spatial data otherwise you would need to deal with [spatial databases](https://en.wikipedia.org/wiki/Spatial_database) for these operations, like how to properly and efficiently represent polygons and curved lines and query them without much overhead (for database folks, the indexing of spatial data is different than normal data).
+
+### shapely
+
+It provides us with datatypes to represent geometric objects that geopandas exploit to represent spatial data.
+
+### nominatim
+
+It is used to look up a location from a textual description (the official website description). This is called geocoding and decoding which is translating address of a location to its coordinates.
+
 ### visualization libraries
 
 There are <b>many</b> libraries for visualization, but we are mainly using [folium](https://python-visualization.github.io/folium/) and [ipyleaflet](https://ipyleaflet.readthedocs.io/en/latest/) and both of them are just wrapper around [leaflet.js](https://github.com/Leaflet/Leaflet) which is the go-to library for any kind of map visualization in almost all web and mobile applications.
@@ -81,6 +112,20 @@ There are other visualization libraries that you should be aware of:
 
 * [mplleaflet](https://github.com/jwass/mplleaflet), which is another `leaflet` based library, but it plays really nice with `matplotlib`.
 
+#### Note
+
+Most of these libraries uses coordinates of a certain place to do its job, but please take into account that some of them accept the coordinates as (longtitude, latitude) and others as (latitude, longtitude). 
+
+
+---
+
+## Quick Tutorials
+
+1.
+2.
+3.
+4.
+5.
 
 ---
 
@@ -193,11 +238,16 @@ Don't hesitate to open an issue if any thing comes up with you.
 
 ---
 
-## Final comments and notes
+## Getting the data
 
-The [`osmnx` tutorial](https://github.com/SmartMobilityAlgorithms/GettingStarted/blob/master/osmnx_tutorial.ipynb) in this repository is the easy way to get the data and construct the graph structure and get cracking with your analysis in python, but in some situations you need to have more control over the data and need to tune it and alter it in ways that `osmnx` can't do. So we need to get down to get the data from the original source of OpenStreetMaps and download the data directly and let `osmnx` parse it.</br>
+There are many ways to get the data including using `osmnx` directly and get your data in a very clean way, but in some situations you need to have more control over the data and need to tune it and alter it in ways that `osmnx` can't do. So we need to get down to get the data from the original source of OpenStreetMaps and download the data directly and after that we let `osmnx` parse it.</br>
 
-Here are some few tips on how to get started with the whole getting data from the original source thing:
+We will be talking now about two ways of getting the data from OpenStreetMaps:
+
+1. Download the data in their vanilla form and structure straight out of OpenStreetMaps (hard way and not widely used in practice).
+2. Use OpenStreetMaps API which is called Overpass API and get your data and filter it on the fly and can be used from `Python` and `Javascript`.
+
+#
 
 * You can acquire street system map for the province of any region of interest (ROI) from [OpenStreetMap](https://www.openstreetmap.org/). Note that the size of some ROI map after decompressing may be is several GBs.
 
@@ -209,8 +259,24 @@ Here are some few tips on how to get started with the whole getting data from th
 
 * Use `osmnx` to read `.osm` file with [`osmnx.graph_from_xml`](https://osmnx.readthedocs.io/en/stable/osmnx.html?highlight=from%20file#osmnx.graph.graph_from_xml) and [voila](https://github.com/voila-dashboards/voila).
 
+#
+
+Check [Open-Datasets](https://github.com/SmartMobilityAlgorithms/Open-Datasets) in which we discuss in enough details how to use Overpass API.
+
+#
+
+### Completness of the data
+
+There are some things that you need to be aware of: the data from OpenStreetMaps are not complete, not in the sense that there are major uncharted areas of the earth but the nodes of the same area usually are not grouped properly so you can have two places with obvious and feasible route between them but the two nodes are not related in any way in the `.osm` file and there is no [way](https://wiki.openstreetmap.org/wiki/Way)/[relation](https://wiki.openstreetmap.org/wiki/Relation) between these nodes, so `osmnx` parser put them in different graph component at this point we would go to use `osrm` to find the route between these nodes and make the graph complete. 
+
 ---
 
-There are some things that you need to be aware of: the data from OpenStreetMaps are not complete, not in the sense that there are uncharted areas of the earth but the nodes of the same area are not grouped properly so you can have two places with obvious and feasible route between them but the two nodes are not related in any way in the `.osm` file and there is no [way](https://wiki.openstreetmap.org/wiki/Way)/[relation](https://wiki.openstreetmap.org/wiki/Relation) between these nodes. 
+## Relevant Tools
 
-But we really need to stitch these nodes together and find routes between them and that we would be talking about in [Open-Datasets](https://github.com/SmartMobilityAlgorithms/Open-Datasets) repository and how to use OpenStreetMaps API and their domain-specific language for querying their data and stitching things together.
+1. Developing web/mobile application and you want to get really fancy with your maps, you have [Open layers](https://openlayers.org/) which is the industry standard for that.
+
+2. Traffic beyond just max speed and duration? [traffic per edge](https://github.com/Project-OSRM/osrm-backend/wiki/Traffic) or [Open traffic](https://github.com/opentraffic)
+
+
+
+
