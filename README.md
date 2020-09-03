@@ -8,35 +8,33 @@ This repository is meant to be the how and the what of everything.
 
 ### Contents
 
-1.  Introduction and Quick Overview 
+1.  [Introduction and Quick Overview](#introduction-and-quick-overview) 
 
-2.  General structure of the repositories
+2.  [General structure of the repositories](#general-structure-of-the-repositories)
 
-3.  Libraries used
-    * osmnx
-    * networkx
-    * osrm
-    * geopandas
-    * shapely
-    * nominatim
-    * visualization libraries 
+3.  [Libraries used](#libraries-used)
+    * [osmnx](#osmnx)
+    * [networkx](#networkx)
+    * [osrm](#osrm)
+    * [geopandas](#geopandas)
+    * [shapely](#shapely)
+    * [nominatim](#nominatim)
+    * [visualization libraries](#visualization-libraries)
+    * [tqdm](#tqdm)
     
-4.  Quick tutorials
-    * snapshots of all the tools
-    * networkx
-    * osmnx
-    * geopandas/ shapely
-    * osrm and routing
+4.  [Quick tutorials](#quick-tutorials)
     
-5. Setting up your environment
-    * Linux 
-    * MacOS 
-    * Windows 10
-    * Jupyter Notebooks
+5. [Setting up your environment](#setting-up-your-environment)
+    * [Linux](#linux)
+    * [MacOS](#macos)
+    * [Windows 10](#windows)
+    * [Jupyter Notebooks](#jupyter-notebook)
 
-6. Getting the data
+6. [OpenStreetMaps data model](#openstreetmaps-data-model)
 
-7. Relevant Tools
+7. [Getting the data](#getting-the-data)
+
+8. [Relevant Tools](#relevant-tools)
 
 ---
 
@@ -55,7 +53,7 @@ Surely, We would love to have `Julia` implementation for the algorithms in so if
 
 ---
 
-## General structure of the repository and reusability of the code
+## General structure of the repositories
 
 
 Each repository contains three sections:
@@ -85,6 +83,12 @@ This library was developed by [geoff boeing](https://geoffboeing.com/) from Univ
 
 This is one of the pillars of Python programming and scientific computing besides numpy and scipy. Its main and only goal is supporting graphs data structures and the associated algorithms like shortest path and networks flow and optimization. `osmnx` returns the map as `networkx` network so it is possible to use all the library's functionalities on the maps obtained from OSM. Networkx has books written explaining its API's and we wholeheartedly recommend [Complex Network Analysis in Python: Recognize - Construct - Visualize - Analyze - Interpret](https://www.amazon.com/Complex-Network-Analysis-Python-Recognize/dp/1680502697) if you want to dive into it. Information about `networkx` is also available [here](https://networkx.github.io/). 
 
+`networkx` has monopoly over the field of network analysis for many years now but sometimes scalability of networkx is not the answer to your problem. If your network has tens of millions of nodes, it gets really ugly because `networkx` is still just `python` library and `python` can't handle these millions of nodes and would run out of memory and give you segmentation fault.
+
+You can optimize `python` by using `__slots__` instead of `__dict__`, discussed [here](https://stackoverflow.com/questions/472000/usage-of-slots#:~:text=The%20proper%20use%20of%20__,one%20dict%20for%20every%20object.%5D) and you can use arrays and all of that, but still you would have problems.
+
+What to do now? we do `C++`, you can use [graph-tool](https://graph-tool.skewed.de/) which was built over the [boost-graph](https://www.boost.org/doc/libs/1_64_0/libs/graph/doc/index.html) libraries or you can use [igraph](https://github.com/igraph) which is written in C. But you got to write your own parser for OpenStreetMaps data and understand its file format, fortunately this is not complicated.
+
 ### osrm
 
 Sometimes in a lot of problems, you are not concerned about finding the route between two places and want to have the routes as given. [OSRM](http://project-osrm.org/) does exactly that; it is a routing engine with an API that you would feed with coordinates and gives you the fastest route between them. It has other useful capabilities like doing travelling salesman and solving all pairs shortest path.
@@ -112,6 +116,10 @@ There are other visualization libraries that you should be aware of:
 
 * [mplleaflet](https://github.com/jwass/mplleaflet), which is another `leaflet` based library, but it plays really nice with `matplotlib`.
 
+### tqdm
+
+[This](https://github.com/tqdm/tqdm) library would help us to see the progress of or algorithm on the runtime. We would use it in all of the other repositories to see how much the speed of the algorithm in traversing the given map and how many nodes are expanded per second. It works on any python iterable structure.
+
 #### Note
 
 Most of these libraries uses coordinates of a certain place to do its job, but please take into account that some of them accept the coordinates as (longtitude, latitude) and others as (latitude, longtitude). 
@@ -121,7 +129,7 @@ Most of these libraries uses coordinates of a certain place to do its job, but p
 
 ## Quick Tutorials
 
-1. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/snapshots.ipynb) Snapshots
+1. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/snapshots.ipynb) **Snapshots**</br>
 We will skim over the capabilities of `osmnx` and `networkx` and how to do visualization very quickly
 
 2.[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/networkx.ipynb) Networkx
@@ -211,7 +219,7 @@ We don't want to *make* anything on ```Windows``` for sure so we will be using `
 
 ---
 
-### Jupyter -- For all operating systems
+### Jupyter Notebook
 
 All the codes in the repositories are in jupyter notebooks so, we need to install that to launch the environment.</br>
 For ```conda``` users and such
@@ -241,6 +249,10 @@ With every notebook, we are providing a google colab link to it and you don't ha
 Things can go wrong very easily when you install the libraries because of building `Rtree` and you can miss up your whole `python` environment if you played with `pip` and `conda` at the same time.
 
 Don't hesitate to open an issue if any thing comes up with you.
+
+---
+
+## OpenStreetMaps Data Model
 
 ---
 
