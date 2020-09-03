@@ -19,7 +19,8 @@ This repository is meant to be the how and the what of everything.
     * geopandas
     * shapely
     * nominatim
-    * visualization libraries 
+    * visualization libraries
+    * tqdm
     
 4.  Quick tutorials
     * snapshots of all the tools
@@ -111,6 +112,10 @@ There are other visualization libraries that you should be aware of:
 * [hvplot](https://hvplot.holoviz.org/user_guide/Geographic_Data.html), if you want to get going through your analysis with geopandas and dataframes and all that. There are no place for that but you need to be aware of the significance of working with vanilla [GeoPandas](https://geopandas.org/), and that `osmnx` [supports that](https://osmnx.readthedocs.io/en/stable/osmnx.html#module-osmnx.projection) and yields two dataframes: one for all your nodes and one for all the edges.
 
 * [mplleaflet](https://github.com/jwass/mplleaflet), which is another `leaflet` based library, but it plays really nice with `matplotlib`.
+
+### tqdm
+
+[This](https://github.com/tqdm/tqdm) library would help us to see the progress of or algorithm on the runtime. We would use it in all of the other repositories to see how much the speed of the algorithm in traversing the given map and how many nodes are expanded per second. It works on any python iterable structure.
 
 #### Note
 
