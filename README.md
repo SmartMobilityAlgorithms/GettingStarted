@@ -121,7 +121,8 @@ Most of these libraries uses coordinates of a certain place to do its job, but p
 
 ## Quick Tutorials
 
-1.
+1. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/snapshots.ipynb) Snapshots
+We will skim over the capabilities of `osmnx` and `networkx` and how to do visualization very quickly
 2.
 3.
 4.
