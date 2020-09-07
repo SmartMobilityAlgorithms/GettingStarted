@@ -129,13 +129,16 @@ Most of these libraries uses coordinates of a certain place to do its job, but p
 
 ## Quick Tutorials
 
-1. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/snapshots.ipynb) **Snapshots**</br>
-We will skim over the capabilities of `osmnx` and `networkx` and how to do visualization very quickly
+1. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/snapshots1.ipynb) **Snapshots 1**</br>
+A very dense tutorial over almost all the tools we will be using in the repositories
 
-2. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/networkx.ipynb) **Networkx**</br>
+2. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/snapshots2.ipynb) **Snapshots 2**</br>
+We will skim over the capabilities of `osmnx` and `networkx` and how to do visualization with our utilities
+
+3. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/networkx.ipynb) **Networkx**</br>
 This is a very short introduction about the capabilities of `networkx`
 
-3. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/OGS.ipynb) **Osmnx/Geopandas/Shapely**</br>
+4. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/OGS.ipynb) **Osmnx/Geopandas/Shapely**</br>
 How to download data from `osmnx` and see all the graph properties
 
 
