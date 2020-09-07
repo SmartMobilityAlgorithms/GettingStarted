@@ -49,7 +49,7 @@ The code in all of the notebooks is step-by-step guide for the implementation of
 
 We have choosen `python` as the main and only language as it doesn't have much jargon and the signal to noise ratio in code is very high; it is almost like pseudocode. `Python` is not the optimal language for scientific computing and especially with large graphs that we extract from maps. All the major routing and navigation engines usually use `C++` or `Java` and most of the authors of the seminal papers in the field usually provide `C++` implementation accompying their papers. What would be the perfect trade-off between `python` and `C++`? `Julia`; it was made with scientific computing in mind and it gives a comparable performance with `C++` and with almost the readability  of `python`.
 
-Surely, We would love to have `Julia` implementation for the algorithms in so if you want to do so, don't hesitate to open PR with your `Julia` code and just change the code line by line from `Python` to `Julia`.
+Surely, We would love to have `Julia` implementation for the algorithms in so if you want to do so, don't hesitate to open PR with your `Julia` code and just change the code line by line from `Python` to `Julia`. For programming language benchmarking, see [Benchmarks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/julia-python3.html).
 
 ---
 
