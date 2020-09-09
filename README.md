@@ -298,7 +298,7 @@ We will be talking now about two ways of getting the data from OpenStreetMaps:
 
 #
 
-Check [Open-Datasets](https://github.com/SmartMobilityAlgorithms/Open-Datasets) in which we discuss in enough details how to use Overpass API.
+Check [Datasets](https://github.com/SmartMobilityAlgorithms/Datasets) in which we discuss in enough details how to use Overpass API.
 
 #
 
