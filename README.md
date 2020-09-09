@@ -286,18 +286,6 @@ We will be talking now about two ways of getting the data from OpenStreetMaps:
 
 #
 
-* You can acquire street system map for the province of any region of interest (ROI) from [OpenStreetMap](https://www.openstreetmap.org/). Note that the size of some ROI map after decompressing may be is several GBs.
-
-* Filter-out the map of ROI to contain only the major roads using the [osmfilter tool](https://wiki.openstreetmap.org/wiki/Osmfilter).
-
-* Pre-filtered datasets that contain actual mapping data can be downloaded from [Geofabrik](https://download.geofabrik.de/index.html)
-
-* [POI Factory](http://www.poi-factory.com/) can be used to get map data of any point of interest. You have to create an account to get access to the data.
-
-* Use `osmnx` to read `.osm` file with [`osmnx.graph_from_xml`](https://osmnx.readthedocs.io/en/stable/osmnx.html?highlight=from%20file#osmnx.graph.graph_from_xml).
-
-#
-
 Check [Datasets](https://github.com/SmartMobilityAlgorithms/Datasets) in which we discuss in enough details how to use Overpass API.
 
 #
