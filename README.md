@@ -49,7 +49,7 @@ The code in all of the notebooks is step-by-step guide for the implementation of
 
 We have choosen `python` as the main and only language as it doesn't have much jargon and the signal to noise ratio in code is very high; it is almost like pseudocode. `Python` is not the optimal language for scientific computing and especially with large graphs that we extract from maps. All the major routing and navigation engines usually use `C++` or `Java` and most of the authors of the seminal papers in the field usually provide `C++` implementation accompying their papers. What would be the perfect trade-off between `python` and `C++`? `Julia`; it was made with scientific computing in mind and it gives a comparable performance with `C++` and with almost the readability  of `python`.
 
-Surely, We would love to have `Julia` implementation for the algorithms in so if you want to do so, don't hesitate to open PR with your `Julia` code and just change the code line by line from `Python` to `Julia`.
+Surely, We would love to have `Julia` implementation for the algorithms in so if you want to do so, don't hesitate to open PR with your `Julia` code and just change the code line by line from `Python` to `Julia`. For programming language benchmarking, see [Benchmarks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/julia-python3.html).
 
 ---
 
@@ -288,19 +288,7 @@ We will be talking now about two ways of getting the data from OpenStreetMaps:
 
 #
 
-* You can acquire street system map for the province of any region of interest (ROI) from [OpenStreetMap](https://www.openstreetmap.org/). Note that the size of some ROI map after decompressing may be is several GBs.
-
-* Filter-out the map of ROI to contain only the major roads using the [osmfilter tool](https://wiki.openstreetmap.org/wiki/Osmfilter).
-
-* Pre-filtered datasets that contain actual mapping data can be downloaded from [Geofabrik](https://download.geofabrik.de/index.html)
-
-* [POI Factory](http://www.poi-factory.com/) can be used to get map data of any point of interest. You have to create an account to get access to the data.
-
-* Use `osmnx` to read `.osm` file with [`osmnx.graph_from_xml`](https://osmnx.readthedocs.io/en/stable/osmnx.html?highlight=from%20file#osmnx.graph.graph_from_xml).
-
-#
-
-Check [Open-Datasets](https://github.com/SmartMobilityAlgorithms/Open-Datasets) in which we discuss in enough details how to use Overpass API.
+Check [Datasets](https://github.com/SmartMobilityAlgorithms/Datasets) in which we discuss in enough details how to use Overpass API.
 
 #
 
