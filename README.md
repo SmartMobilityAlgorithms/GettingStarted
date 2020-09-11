@@ -129,8 +129,6 @@ Most of these libraries uses coordinates of a certain place to do its job, but p
 
 ## Quick Tutorials
 
-### Don't run google colab for now and run the notebooks on your local machine
-
 1. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SmartMobilityAlgorithms/GettingStarted/blob/master/snapshots1.ipynb) **Snapshots 1**</br>
 A very dense tutorial over almost all the tools we will be using in the repositories
 
