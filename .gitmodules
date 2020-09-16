@@ -4,3 +4,6 @@
 [submodule "osman"]
 	path = osman
 	url = https://github.com/omar-3/osman.git
+[submodule "utilities"]
+	path = utilities
+	url = https://github.com/SmartMobilityAlgorithms/utilities
