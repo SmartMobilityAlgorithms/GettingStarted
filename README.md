@@ -146,7 +146,7 @@ This is a very short introduction about the capabilities of `networkx`
 5. **Osmnx/Geopandas/Shapely**</br>
 How to download data from `osmnx` and see all the graph properties
 
-
+Use binder, its icon is at the top, to launch the repository and run the notebooks remotely. 
 
 ---
 
