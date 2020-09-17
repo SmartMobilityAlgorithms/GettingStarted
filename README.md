@@ -131,19 +131,19 @@ Most of these libraries uses coordinates of a certain place to do its job, but p
 
 ## Quick Tutorials
 
-1. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/snapshots1.ipynb) **Snapshots 1**</br>
+1. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/snapshots1.ipynb)  **Snapshots 1**</br>
 A very dense tutorial over almost all the tools we will be using in the repositories
 
-2. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/utils.ipynb)**Utilities**</br>
+2. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/utils.ipynb) **Utilities**</br>
 Goes over how to properly use the graphs returned from `osmnx` and some useful methods on them
 
-3. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/snapshots2.ipynb)**Snapshots 2**</br>
+3. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/snapshots2.ipynb) **Snapshots 2**</br>
 We will skim over the capabilities of `osmnx` and `networkx` and how to do visualization with our utilities
 
-4. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/networkx.ipynb)**Networkx**</br>
+4. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/networkx.ipynb) **Networkx**</br>
 This is a very short introduction about the capabilities of `networkx`
 
-5. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/OGS.ipynb)**Osmnx/Geopandas/Shapely**</br>
+5. [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/smartmobilityal--gettingstarted-3hclw4lh/notebooks/OGS.ipynb) **Osmnx/Geopandas/Shapely**</br>
 How to download data from `osmnx` and see all the graph properties
 
 
