@@ -134,7 +134,7 @@ Most of these libraries uses coordinates of a certain place to do its job, but p
 1. **Snapshots 1**</br>
 A very dense tutorial over almost all the tools we will be using in the repositories
 
-2 **Utilities**</br>
+2. **Utilities**</br>
 Goes over how to properly use the graphs returned from `osmnx` and some useful methods on them
 
 3. **Snapshots 2**</br>
