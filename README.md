@@ -249,7 +249,7 @@ For ```pip``` people
 
 #### Note
 
-Things can go wrong very easily when you install the libraries because of building `Rtree` and you can mwss up your whole `python` environment if you played with `pip` and `conda` at the same time.
+Things can go wrong very easily when you install the libraries because of building `Rtree` and you can mess up your whole `python` environment if you played with `pip` and `conda` at the same time.
 
 Don't hesitate to open an issue if any thing comes up with you.
 
