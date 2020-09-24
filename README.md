@@ -280,9 +280,9 @@ All the above can be found easily on the linked elements page, but there are thi
 
 There are many ways to get the data including using `osmnx` directly and get your data in a very clean way, but in some situations you need to have more control over the data and need to tune it and alter it in ways that `osmnx` can't do. So we need to get down to get the data from the original source of OpenStreetMaps and download the data directly and after that we let `osmnx` parse it.</br>
 
-We will be talking now about two ways of getting the data from OpenStreetMaps:
+Generally there are two ways of getting the data from OpenStreetMaps:
 
-1. Download the data in their vanilla form and structure straight out of OpenStreetMaps (hard way and not widely used in practice).
+1. Download the data in its vanilla form and structure straight out of OpenStreetMaps website and use tools like [osmfilter](https://wiki.openstreetmap.org/wiki/Osmfilter)(hard way and not widely used in practice) to tune it as you want and pass it to `osmnx` in `python` code and that is it.
 2. Use OpenStreetMaps API which is called Overpass API and get your data and filter it on the fly and can be used from `Python` and `Javascript`.
 
 #
