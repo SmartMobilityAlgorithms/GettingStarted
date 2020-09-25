@@ -126,6 +126,10 @@ There are other visualization libraries that you should be aware of:
 
 Most of these libraries uses coordinates of a certain place to do its job, but please take into account that some of them accept the coordinates as (longtitude, latitude) and others as (latitude, longtitude). 
 
+#### Other Extensions
+
+[JupyterLab Extensions for Geospatial Data science](https://towardsdatascience.com/4-must-have-jupyterlab-extensions-for-geospatial-data-science-f3cf7822de4b)
+
 
 ---
 
