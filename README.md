@@ -193,6 +193,11 @@ If there is any error in installation, the terminal will whine about missing mod
 
 That exact same steps as above but instead of using ```apt```, you are going to use ```brew``` and that if you want to do the ```pip``` way. If you want to use ```conda```, it would be the exact same command.
 
+EXCEPT in installing `libspatialindex-c4v5`, you will need to issue the following command instead
+
+```$ brew install spatialindex```
+
+
 ---
 
 ### Windows
