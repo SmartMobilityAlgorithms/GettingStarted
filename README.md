@@ -145,6 +145,9 @@ This is a very short introduction about the capabilities of `networkx`
 5. **Osmnx/Geopandas/Shapely**</br>
 How to download data from `osmnx` and see all the graph properties
 
+6. **Generation of Initial Population**</br>
+How to generate initial population for P-metaheruristics in continous nad combinatorial problems. In the generation of the initial population, the main criterion to deal with is diversification. If the initial population is not well diversified, a premature convergence can occur. For instance, this may happen if the initial population is generated using a greedy heuristic or a S-metaheuristic (e.g., local search, simulated annealing) for each solution of the population.
+
 Use binder, its icon is at the top, to launch the repository and run the notebooks remotely. 
 
 ---
