@@ -5,5 +5,4 @@ ipyleaflet
 plotly
 folium
 sobol_seq
-smt
 numpy
