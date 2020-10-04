@@ -1,10 +1,7 @@
 setuptools
-numpy
 osmnx
 tqdm
 ipyleaflet
 plotly
 folium
 sobol_seq
-pyDOE
-smt
