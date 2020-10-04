@@ -1,5 +1,5 @@
 setuptools
-mumpy
+numpy
 osmnx
 tqdm
 ipyleaflet
