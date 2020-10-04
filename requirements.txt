@@ -1,7 +1,8 @@
-osmnx==0.16.0
+osmnx
 tqdm
 ipyleaflet
 plotly
 folium
 sobol_seq
 smt
+numpy
