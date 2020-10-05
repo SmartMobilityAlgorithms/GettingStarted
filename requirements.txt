@@ -5,3 +5,4 @@ ipyleaflet
 plotly
 folium
 sobol_seq
+lhsmdu
