@@ -312,10 +312,9 @@ You can read more about that completness of OpenStreetMaps data here:
 
 1. Developing web/mobile application and you want to get really fancy with your maps, you have [Open layers](https://openlayers.org/) which is the industry standard for that.
 
-2. Traffic beyond just max speed and duration? [traffic per edge](https://github.com/Project-OSRM/osrm-backend/wiki/Traffic) or [Open traffic](https://github.com/opentraffic)
+2. Traffic beyond just max speed and duration? [traffic per edge](https://github.com/Project-OSRM/osrm-backend/wiki/Traffic) or [Open traffic](https://github.com/opentraffic).
 
-3. [JupyterLab Extensions for Geospatial Data science](https://towardsdatascience.com/4-must-have-jupyterlab-extensions-for-geospatial-data-science-f3cf7822de4b)
+3. [JupyterLab Extensions for Geospatial Data science](https://towardsdatascience.com/4-must-have-jupyterlab-extensions-for-geospatial-data-science-f3cf7822de4b).
 
-
-
+4. [OSMPythonTools](https://github.com/mocnik-science/osm-python-tools) is a well-written package to query OSM services.
 
