@@ -5,3 +5,4 @@ plotly
 folium
 sobol_seq
 pyDOE
+ghalton
