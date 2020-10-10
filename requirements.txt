@@ -1,8 +1,8 @@
-setuptools
 osmnx
 tqdm
 ipyleaflet
 plotly
 folium
 sobol_seq
-lhsmdu
+pyDOE
+ghalton
