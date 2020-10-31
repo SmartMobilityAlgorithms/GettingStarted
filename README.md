@@ -316,3 +316,22 @@ You can read more about that completness of OpenStreetMaps data here:
 
 4. [OSMPythonTools](https://github.com/mocnik-science/osm-python-tools) is a well-written package to query OSM services.
 
+## License
+
+The project is licensed under the [Apache license](https://github.com/SmartMobilityAlgorithms/GettingStarted/blob/master/LICENSE).
+
+## BibTeX Citation
+
+If you use any material in the repositories in a scientific publication, we would appreciate using the following citation:
+
+```
+@misc {
+    author    = {Omar Khaled, Alaa Khamis},
+    month     = {oct},
+    year      = {2020},
+    title     = {Smart Mobility Algorithms},
+    url       = {https://github.com/SmartMobilityAlgorithms},
+    keywords  = {graph-theory,network-analysis,python,spatial-networks,smart mobility,combinatorial optimization}
+}
+```
+
