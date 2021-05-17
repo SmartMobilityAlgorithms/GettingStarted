@@ -316,23 +316,10 @@ You can read more about that completness of OpenStreetMaps data here:
 3. [JupyterLab Extensions for Geospatial Data science](https://towardsdatascience.com/4-must-have-jupyterlab-extensions-for-geospatial-data-science-f3cf7822de4b).
 
 4. [OSMPythonTools](https://github.com/mocnik-science/osm-python-tools) is a well-written package to query OSM services.
+5. [deck.gl](https://deck.gl/)
+6. [kepler.gl](https://kepler.gl/)
+7. [Google Data Studio](https://datastudio.google.com/)
 
 ## License
 
 The project is licensed under the [Apache license](https://github.com/SmartMobilityAlgorithms/GettingStarted/blob/master/LICENSE).
-
-## BibTeX Citation
-
-If you use any material in the repositories in a scientific publication, we would appreciate using the following citation:
-
-```
-@misc {
-    author    = {Omar Khaled, Alaa Khamis},
-    month     = {oct},
-    year      = {2020},
-    title     = {Smart Mobility Algorithms},
-    url       = {https://github.com/SmartMobilityAlgorithms},
-    keywords  = {graph-theory,network-analysis,python,spatial-networks,smart mobility,combinatorial optimization}
-}
-```
-
