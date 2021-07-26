@@ -319,6 +319,7 @@ You can read more about that completness of OpenStreetMaps data here:
 5. [deck.gl](https://deck.gl/)
 6. [kepler.gl](https://kepler.gl/)
 7. [Google Data Studio](https://datastudio.google.com/)
+8. [QGIS](https://qgis.org/en/site/)
 
 ## License
 
